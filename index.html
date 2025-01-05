@@ -47,6 +47,10 @@
             e.preventDefault();
             // Add form submission logic here
         });
+
+        function scrollToContactForm() {
+    document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth' });
+}
     </script>
 </head>
 
@@ -139,17 +143,199 @@
       
     
         <!-- Hero Section with Local Context -->
-        <section class="hero-section position-relative mt-5 p-4">
-            <div class="mandala-bg"></div>
+        <section class="services-section py-5" id="services">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                        <h1 class="display-4 fw-bold" data-lang-en="Solar Solutions for Purvanchal" data-lang-hi="पूर्वांचल के लिए सौर समाधान">Solar Solutions for Purvanchal</h1>
-                        <p class="lead" data-lang-en="Serving Gazipur, Zamania, and Varanasi with sustainable energy solutions" data-lang-hi="गाजीपुर, जमानिया और वाराणसी में स्थायी ऊर्जा समाधान">Serving Gazipur, Zamania, and Varanasi with sustainable energy solutions</p>
+                <!-- SEO Optimized Header -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" data-lang-en="Solar Solutions & Services in Purvanchal" 
+                        data-lang-hi="पूर्वांचल में सौर समाधान और सेवाएं">
+                        Solar Solutions & Services in Purvanchal
+                    </h2>
+                    <p class="lead" data-lang-en="Comprehensive solar solutions for commercial, residential, and maintenance needs" 
+                        data-lang-hi="वाणिज्यिक, आवासीय और रखरखाव आवश्यकताओं के लिए व्यापक सौर समाधान">
+                        Comprehensive solar solutions for commercial, residential, and maintenance needs
+                    </p>
+                </div>
+        
+                <!-- Commercial Solar Setup -->
+                <div class="service-card mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="service-content p-4">
+                                <span class="badge bg-primary mb-2">Commercial Solar</span>
+                                <h3 class="h2 mb-3" data-lang-en="Industrial & Commercial Solar Plants (2-5 MW)" 
+                                    data-lang-hi="औद्योगिक और वाणिज्यिक सौर संयंत्र (2-5 मेगावाट)">
+                                    Industrial & Commercial Solar Plants (2-5 MW)
+                                </h3>
+                                <div class="mb-4">
+                                    <h4 class="h5 text-primary">Key Features:</h4>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">✓ Turn-key solar plant installation</li>
+                                        <li class="mb-2">✓ Custom design for maximum efficiency</li>
+                                        <li class="mb-2">✓ Advanced monitoring systems</li>
+                                        <li class="mb-2">✓ Grid integration support</li>
+                                    </ul>
+                                </div>
+                                <div class="specifications bg-light p-3 rounded">
+                                    <h4 class="h5 text-primary">Technical Specifications:</h4>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="mb-2"><strong>Capacity:</strong> 2-5 MW</p>
+                                            <p class="mb-2"><strong>Area Required:</strong> 4-10 acres</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="mb-2"><strong>Generation:</strong> 3.6M-9M units/year</p>
+                                            <p class="mb-2"><strong>Setup Time:</strong> 3-6 months</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/800/600" 
+                                 alt="Large scale commercial solar plant installation in Purvanchal" 
+                                 class="img-fluid rounded shadow-lg"
+                                 width="800" height="600">
+                        </div>
                     </div>
+                </div>
+        
+                <!-- Household Solar Setup -->
+                <div class="service-card mb-5 bg-light p-4 rounded">
+                    <div class="row align-items-center flex-md-row-reverse">
+                        <div class="col-md-6">
+                            <div class="service-content p-4">
+                                <span class="badge bg-success mb-2">Residential Solar</span>
+                                <h3 class="h2 mb-3" data-lang-en="Residential Solar Panel Installation" 
+                                    data-lang-hi="आवासीय सौर पैनल स्थापना">
+                                    Residential Solar Panel Installation
+                                </h3>
+                                <div class="mb-4">
+                                    <p class="lead">Transform your home into a sustainable power generator with our residential solar solutions.</p>
+                                    <div class="package-options">
+                                        <h4 class="h5 text-primary">Available Packages:</h4>
+                                        <div class="row g-3">
+                                            <div class="col-sm-6">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Starter Home</h5>
+                                                        <ul class="list-unstyled">
+                                                            <li>2-3 kW System</li>
+                                                            <li>8-10 Panels</li>
+                                                            <li>Ideal for 2-3 BHK</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Premium Home</h5>
+                                                        <ul class="list-unstyled">
+                                                            <li>5-7 kW System</li>
+                                                            <li>15-20 Panels</li>
+                                                            <li>Ideal for 4+ BHK</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/800/600" 
+                                 alt="Residential rooftop solar installation in Purvanchal" 
+                                 class="img-fluid rounded shadow-lg"
+                                 width="800" height="600">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Solar Maintenance Services -->
+                <div class="service-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="service-content p-4">
+                                <span class="badge bg-warning text-dark mb-2">Maintenance</span>
+                                <h3 class="h2 mb-3" data-lang-en="Solar Panel Maintenance & Cleaning Services" 
+                                    data-lang-hi="सौर पैनल रखरखाव और सफाई सेवाएं">
+                                    Solar Panel Maintenance & Cleaning Services
+                                </h3>
+                                <div class="maintenance-services">
+                                    <div class="mb-4">
+                                        <h4 class="h5 text-primary">Comprehensive Maintenance Package:</h4>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <strong>Regular Cleaning:</strong>
+                                                <p>Professional cleaning using advanced equipment and de-mineralized water</p>
+                                            </li>
+                                            <li class="mb-3">
+                                                <strong>Performance Monitoring:</strong>
+                                                <p>Regular efficiency checks and performance optimization</p>
+                                            </li>
+                                            <li class="mb-3">
+                                                <strong>Preventive Maintenance:</strong>
+                                                <p>Quarterly inspections and preventive maintenance checks</p>
+                                            </li>
+                                            <li class="mb-3">
+                                                <strong>Emergency Support:</strong>
+                                                <p>24/7 emergency support with 4-hour response time</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="maintenance-plans bg-light p-3 rounded">
+                                        <h4 class="h5 text-primary">Service Plans:</h4>
+                                        <div class="row g-3">
+                                            <div class="col-sm-4">
+                                                <div class="text-center">
+                                                    <h5>Basic</h5>
+                                                    <p>Quarterly Cleaning</p>
+                                                    <p class="price">₹2,999/year</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="text-center">
+                                                    <h5>Standard</h5>
+                                                    <p>Monthly Cleaning</p>
+                                                    <p class="price">₹5,999/year</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="text-center">
+                                                    <h5>Premium</h5>
+                                                    <p>Bi-weekly Cleaning</p>
+                                                    <p class="price">₹8,999/year</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/800/600" 
+                                 alt="Solar panel cleaning and maintenance service in Purvanchal" 
+                                 class="img-fluid rounded shadow-lg"
+                                 width="800" height="600">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Call to Action -->
+                <div class="text-center mt-5">
+                    <h4 class="mb-3" data-lang-en="Ready to Go Solar?" data-lang-hi="सोलर अपनाने के लिए तैयार हैं?">
+                        Ready to Go Solar?
+                    </h4>
+                    <button class="btn btn-primary btn-lg" onclick="scrollToContactForm()" 
+                            data-lang-en="Get Free Consultation" data-lang-hi="निःशुल्क परामर्श प्राप्त करें">
+                        Get Free Consultation
+                    </button>
                 </div>
             </div>
         </section>
+        
 
          <!-- Government Scheme Section -->
     <section class="scheme-section" id="government-scheme">

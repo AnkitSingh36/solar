@@ -98,6 +98,33 @@
     font-weight: 500;
 }
 
+.service-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.maintenance-plans .price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.specifications {
+    font-size: 0.9rem;
+}
+
+.badge {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
 /* end */
 .parallax {
     height: 100vh;
