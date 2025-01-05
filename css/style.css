@@ -2,6 +2,103 @@
   font-family: Inter;
 }
 
+/* new CSS */
+
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #ff6b6b;
+    --accent-color: #ffd700;
+}
+
+/* Language Toggle Styles */
+.lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Cultural Elements */
+.mandala-bg {
+    background-image: url('mandala-pattern.svg');
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+.contact-form {
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Accessibility Improvements */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.scheme-section {
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('indian-flag-pattern.svg');
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+}
+
+.scheme-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    border: 2px solid #ff9933;
+}
+
+.benefit-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ff9933;
+}
+
+.scheme-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: #ff9933;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* end */
 .parallax {
     height: 100vh;
     background-image: url("/solar/img/skyImage.jpg");

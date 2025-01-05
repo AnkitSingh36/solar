@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Leading solar energy solutions in Gazipur, Zamania, and Varanasi">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -17,11 +19,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
@@ -30,8 +29,25 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/home.js"></script>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
 
-    <!-- <title>Hello, world!</title> -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Language Toggle Function
+        function toggleLanguage(lang) {
+            document.querySelectorAll('[data-lang-en]').forEach(element => {
+                element.textContent = element.getAttribute(`data-lang-${lang}`);
+            });
+        }
+
+        // Form Validation and Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add form submission logic here
+        });
+    </script>
 </head>
 
 
@@ -43,45 +59,13 @@
 
         <!-- <img src="img/skyImage.jpg" style="width: 100%; position: fixed; height: 100vh;"> -->
 
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 w-100" style="position: fixed; top: 0; z-index: 1000;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Solarva</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" alt="Solarva India Logo" width="70" height="40">
+                    <span class="ms-2 d-none d-md-inline">HIND ENERGIE</span>
+                </a>
             </div>
         </nav>
 
@@ -93,8 +77,6 @@
 
                     <p>We believe in sustainable energy practices that can help topnotch solar panel installation
                         services.</p>
-
-                    <button class="bg-white p-2 text-black br-10">Discover Solarva</button>
                 </div>
 
             </div>
@@ -139,7 +121,7 @@
             <div class="col-12 col-md-4 col-lg-4 border">
                 <div class="d-flex gap-5 align-items-center justify-content-center p-4">
                     <div>
-                        <p class="text-lightblue fw-500 fs-20 mb-0">5K+</p>
+                        <p class="text-lightblue fw-500 fs-20 mb-0">50+</p>
                         <p class="text-lightblue fw-500 fs-18 mb-0 mt-1">Installation</p>
                     </div>
                     <div>
@@ -151,6 +133,186 @@
             </div>
 
         </div>
+
+        <!-- Descrition -->
+    
+      
+    
+        <!-- Hero Section with Local Context -->
+        <section class="hero-section position-relative mt-5 p-4">
+            <div class="mandala-bg"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h1 class="display-4 fw-bold" data-lang-en="Solar Solutions for Purvanchal" data-lang-hi="पूर्वांचल के लिए सौर समाधान">Solar Solutions for Purvanchal</h1>
+                        <p class="lead" data-lang-en="Serving Gazipur, Zamania, and Varanasi with sustainable energy solutions" data-lang-hi="गाजीपुर, जमानिया और वाराणसी में स्थायी ऊर्जा समाधान">Serving Gazipur, Zamania, and Varanasi with sustainable energy solutions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Government Scheme Section -->
+    <section class="scheme-section" id="government-scheme">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold" data-lang-en="PM Suryaghar Muft Bijli Yojana" data-lang-hi="पीएम सूर्यघर मुफ्त बिजली योजना">
+                        PM Suryaghar Muft Bijli Yojana
+                    </h2>
+                    <p class="lead" data-lang-en="Transform your home into a power generator" data-lang-hi="अपने घर को बिजली उत्पादक में बदलें">
+                        Transform your home into a power generator
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="scheme-card position-relative">
+                        <span class="scheme-badge" data-lang-en="Government Scheme" data-lang-hi="सरकारी योजना">
+                            Government Scheme
+                        </span>
+                        
+                        <h3 class="h4 mb-4" data-lang-en="Key Benefits" data-lang-hi="मुख्य लाभ">Key Benefits</h3>
+                        
+                        <div class="benefit-item">
+                            <h4 class="h6 mb-2" data-lang-en="Free Electricity" data-lang-hi="मुफ्त बिजली">
+                                Free Electricity
+                            </h4>
+                            <p class="mb-0" data-lang-en="Generate your own electricity and reduce dependency on grid power" 
+                               data-lang-hi="अपनी खुद की बिजली बनाएं और ग्रिड पावर पर निर्भरता कम करें">
+                                Generate your own electricity and reduce dependency on grid power
+                            </p>
+                        </div>
+
+                        <div class="benefit-item">
+                            <h4 class="h6 mb-2" data-lang-en="Subsidy Benefits" data-lang-hi="सब्सिडी लाभ">
+                                Subsidy Benefits
+                            </h4>
+                            <p class="mb-0" data-lang-en="Up to 60% subsidy on solar panel installation" 
+                               data-lang-hi="सोलर पैनल स्थापना पर 60% तक सब्सिडी">
+                                Up to 60% subsidy on solar panel installation
+                            </p>
+                        </div>
+
+                        <div class="benefit-item">
+                            <h4 class="h6 mb-2" data-lang-en="Easy EMI Options" data-lang-hi="आसान ईएमआई विकल्प">
+                                Easy EMI Options
+                            </h4>
+                            <p class="mb-0" data-lang-en="Flexible payment options with low-interest rates" 
+                               data-lang-hi="कम ब्याज दरों के साथ लचीले भुगतान विकल्प">
+                                Flexible payment options with low-interest rates
+                            </p>
+                        </div>
+
+                        <button class="btn btn-primary mt-3" data-lang-en="Check Eligibility" data-lang-hi="पात्रता जांचें">
+                            Check Eligibility
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <img src="/api/placeholder/600/400" alt="Solar panel installation under PM Suryaghar Yojana" 
+                             class="img-fluid rounded shadow-lg" 
+                             width="600" height="400">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3 text-center bg-dark bg-opacity-75 text-white rounded-bottom">
+                            <p class="small mb-0" data-lang-en="Image: Solar installation under PM Suryaghar Yojana" 
+                               data-lang-hi="छवि: पीएम सूर्यघर योजना के तहत सोलर स्थापना">
+                                Image: Solar installation under PM Suryaghar Yojana
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Facts About the Scheme -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="bg-light p-4 rounded">
+                        <h4 class="mb-3" data-lang-en="Quick Facts" data-lang-hi="त्वरित तथ्य">Quick Facts</h4>
+                        <div class="row g-4">
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="p-3 bg-white rounded shadow-sm">
+                                    <h5 class="text-primary mb-2">₹ 1,08,000</h5>
+                                    <p class="small mb-0" data-lang-en="Average Subsidy Amount" data-lang-hi="औसत सब्सिडी राशि">
+                                        Average Subsidy Amount
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="p-3 bg-white rounded shadow-sm">
+                                    <h5 class="text-primary mb-2">1 करोड़+</h5>
+                                    <p class="small mb-0" data-lang-en="Households Targeted" data-lang-hi="लक्षित परिवार">
+                                        Households Targeted
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="p-3 bg-white rounded shadow-sm">
+                                    <h5 class="text-primary mb-2">2-3 kW</h5>
+                                    <p class="small mb-0" data-lang-en="Recommended System Size" data-lang-hi="अनुशंसित सिस्टम आकार">
+                                        Recommended System Size
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="p-3 bg-white rounded shadow-sm">
+                                    <h5 class="text-primary mb-2">25 वर्ष</h5>
+                                    <p class="small mb-0" data-lang-en="System Lifespan" data-lang-hi="सिस्टम जीवन काल">
+                                        System Lifespan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Client Satisfaction Section -->
+     <section class="testimonials py-5 bg-light" aria-label="Client Testimonials">
+        <div class="container">
+            <h2 class="text-center mb-5" data-lang-en="What Our Clients Say" data-lang-hi="हमारे ग्राहक क्या कहते हैं">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div>
+                                <h5 class="mb-0">राजेश कुमार</h5>
+                                <small class="text-muted">गाजीपुर</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">⭐⭐⭐⭐⭐</p>
+                        <p>"सोलर पैनल लगवाने के बाद बिजली का बिल आधा हो गया है। टीम का सहयोग बहुत अच्छा रहा।"</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div>
+                                <h5 class="mb-0">राजेश कुमार</h5>
+                                <small class="text-muted">गाजीपुर</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">⭐⭐⭐⭐⭐</p>
+                        <p>"सोलर पैनल लगवाने के बाद बिजली का बिल आधा हो गया है। टीम का सहयोग बहुत अच्छा रहा।"</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div>
+                                <h5 class="mb-0">राजेश कुमार</h5>
+                                <small class="text-muted">गाजीपुर</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">⭐⭐⭐⭐⭐</p>
+                        <p>"सोलर पैनल लगवाने के बाद बिजली का बिल आधा हो गया है। टीम का सहयोग बहुत अच्छा रहा।"</p>
+                    </div>
+                </div>
+                <!-- Add more testimonials -->
+            </div>
+        </div>
+    </section>
 
 
         <!-- Image Section  -->
@@ -188,135 +350,61 @@
             </div>
 
         </div>
-        <!-- <section class="container-fluid d-md-block d-none bg-light">
-            <div class="row ps-md-4 ps-0 pb-md-5 pb-0">
-                <div class="d-flex scroller gap-3 slick-initialized slick-slider">
+    
 
-
-                    <div class="slick-list draggable">
-                        <div class="slick-track"
-                            style="opacity: 1; width: 9285px; transform: translate3d(-1857px, 0px, 0px);">
-                            <div class="col-xl-5 col-md-5 my-4 my-md-0 mx-3 slick-slide slick-cloned" tabindex="-1"
-                                style="width: 587px;" role="tabpanel" data-slick-index="-3" aria-hidden="true">
-                                <img src="img/home7.svg" style="width:100%; height: 100%;">
+        <section class="contact-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form class="contact-form" id="contactForm">
+                            <h3 class="text-center mb-4" data-lang-en="Get in Touch" data-lang-hi="संपर्क करें">Get in Touch</h3>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name / नाम *</label>
+                                <input type="text" class="form-control" id="name" required>
                             </div>
-                            <div class="col-xl-5 col-md-5 my-4 my-md-0 mx-3 slick-slide slick-cloned" tabindex="-1"
-                                style="width: 587px;" role="tabpanel" aria-describedby="slick-slide-control12"
-                                data-slick-index="-2" aria-hidden="true">
-                                <img src="img/home8.svg" style="width:100%; height: 100%;">
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone / फ़ोन *</label>
+                                <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}" required>
                             </div>
-                            <div class="col-xl-5 col-md-5 my-4 my-md-0 mx-3 slick-slide slick-cloned" tabindex="-1"
-                                style="width: 587px;" role="tabpanel" data-slick-index="-1" aria-hidden="true">
-                                <img src="img/home9.svg" style="width:100%; height: 100%;">
+                            <div class="mb-3">
+                                <label for="location" class="form-label">Location / स्थान *</label>
+                                <select class="form-select" id="location" required>
+                                    <option value="gazipur">Gazipur / गाजीपुर</option>
+                                    <option value="zamania">Zamania / जमानिया</option>
+                                    <option value="varanasi">Varanasi / वाराणसी</option>
+                                </select>
                             </div>
-                            <div class="col-xl-5 col-md-5 my-4 my-md-0 mx-3 slick-slide slick-current slick-active"
-                                tabindex="0" style="width: 587px;" role="tabpanel" id="slick-slide10"
-                                aria-describedby="slick-slide-control10" data-slick-index="0" aria-hidden="false">
-                                <img src="img/home3.svg" style="width:100%; height: 100%;">
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message / संदेश</label>
+                                <textarea class="form-control" id="message" rows="4"></textarea>
                             </div>
-                            <div class="col-xl-5 col-md-5 my-4 my-md-0 mx-3 slick-slide slick-active" tabindex="0"
-                                style="width: 587px;" role="tabpanel" id="slick-slide11" data-slick-index="1"
-                                aria-hidden="false">
-                                <img src="img/home1.svg" style="width:100%; height: 100%;">
-                            </div>
-                            <div class="col-xl-5 col-md-5 my-4 my-md-0 mx-3 slick-slide slick-active" tabindex="0"
-                                style="width: 587px;" role="tabpanel" id="slick-slide12"
-                                aria-describedby="slick-slide-control11" data-slick-index="2" aria-hidden="false">
-                                <img src="img/home6.svg" style="width:100%; height: 100%;">
-                            </div>
-                 
-                            <div class="col-xl-5 col-md-5 my-4 my-md-0 mx-3 slick-slide slick-cloned" tabindex="-1"
-                                style="width: 587px;" role="tabpanel" aria-describedby="slick-slide-control12"
-                                data-slick-index="10" aria-hidden="true">
-                                <img src="img/home8.svg" style="width:100%; height: 100%;">
-                            </div>
-                       
-                        </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit / भेजें</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section> -->
-
-        <footer id="footer" class="container-fluid bg-light">
-            <div class="px-md-5 px-0 pt-5 curve">
+        </section>
+    
+        <!-- Enhanced Footer with Local Context -->
+        <footer class="bg-dark text-light py-4">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-12 text-start align-items-start">
-                        <div class="pe-md-4 pe-0">
-                            <!-- <img src="img/icon2.svg" class="100%"> -->
-                            <p class="fs-18 fWeight-300 pe-4">
-                                We are not just building homes but instead taking a holistic approach
-                                required
-                                to
-                                solve the biggest problems in the world: climate change &amp; housing
-                                affordability.
-                            </p>
-
-                        </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us / संपर्क करें</h5>
+                        <address>
+                            <p>🏢 Office / कार्यालय:</p>
+                            <p>Gazipur Main Road, Near Bus Stand<br>
+                            गाजीपुर मेन रोड, बस स्टैंड के पास</p>
+                            <p>📞 +91 XXXXXXXXXX</p>
+                            <p>📧 info@solarva.in</p>
+                        </address>
                     </div>
-                    <div class="col-md-2 col-5">
-                        <p class="fWeight-500 fs-25 mb-md-5 mb-3 text-dark">Links</p>
-                        <ul class="list-unstyled mb-2">
-                            <li><a href="" class="text-decoration-none fs-18 text-grey fWeight-300">The
-                                    Problem</a></li>
-                            <li><a href="" class="text-decoration-none fs-18 text-grey fWeight-300">Our
-                                    Solution</a></li>
-                            <li><a href="" class="text-decoration-none fs-18 text-grey fWeight-300">How
-                                    Does It
-                                    Work?</a></li>
-                            <li><a href="" class="text-decoration-none fs-18 text-grey fWeight-300">Why
-                                    Solarva?</a></li>
-                            <li><a href="" class="text-decoration-none fs-18 text-grey fWeight-300">About
-                                    Us</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="col-md-5 col-7">
-                        <div class="row d-flex flex-md-row flex-column">
-                            <div class="col-md-8 col-12">
-                                <p class="fWeight-500 fs-25 mb-md-5 mb-3 text-dark">Contact Info</p>
-                                <ul class="list-unstyled mb-2">
-                                    <li class="mb-2 fs-18"><a href="tel:+1 (310)910-1132" class="text-decoration-none text-grey  fWeight-300"> <img src="img/telephone1.svg" class="me-2 footerContactIcon">
-                                            +1
-                                            (310)
-                                            910-1132</a></li>
-                                    <li class="mb-2 fs-18"><a href="" class="text-decoration-none text-grey fs-18 fWeight-300"><img src="img/messageBox1.svg" class="me-2 footerContactIcon">
-                                            contactus@solarva.com</a></li>
-
-                                </ul>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <p class="fWeight-500 fs-25 mb-md-5 mb-3 text-dark">Follow Us</p>
-                                <div class="footerIcon">
-                                    <a href="" class="text-decoration-none text-grey fs-18 fWeight-300" target="_blank"><img src="img/twiter1.svg" class="me-2 FooterMediaIcon" width="25%"></a>
-                                    <a href="" class="text-decoration-none text-grey fs-18 fWeight-300" target="_blank"><img src="img/linkedin1.svg" width="25%" class="FooterMediaIcon"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <hr class="text-light" style="border: 0.5px solid rgba(0, 0, 0, 0.6);">
-
-                <div class="footerCopyRight mx-3 mt-md-0 mt-3 text-blueFooter text-center mx-md-5 px-3">
-                    <p class="mb-0 pb-3"> © Copyright 2023 All right reserved by <b class="text-dark">Solarva</b>
-                    </p>
+                    <!-- Add more footer sections -->
                 </div>
             </div>
         </footer>
 
     </section>
-
-    <section>
-
-    </section>
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/distjs/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> -->
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
 
 </body>
 
